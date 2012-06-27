@@ -50,14 +50,14 @@ module Cukunity
           opts.separator '    Check your system for the required platform tools.'
           opts.separator 'bootstrap <path>'
           opts.separator '    Bootstrap your Unity project.'
-          opts.separator 'features [--path=<path>] [<cucumber-opts>...]'
+          opts.separator 'features [--base=<path>] [<cucumber-opts>...]'
           opts.separator '    Run cucumber against path containing feature files.'
 
           opts.separator ''
           opts.separator 'Options:'
 
-          # --path
-          opts.on('-p', '--path', '=<path>', 'Features path.') do |path|
+          # --base
+          opts.on('-b', '--base', '=<path>', 'Base directory for the features.') do |path|
             options.path = path
           end
 
